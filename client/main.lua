@@ -33,8 +33,8 @@ function ToggleCruise()
     local vehicle = GetVehiclePedIsIn(ped, false) -- Get Vehicle In
     local cruiseSpeed = GetEntitySpeed(vehicle)
     cruise = not cruise
-    cruiseSpeedKM = math.floor(cruiseSpeed * 3.6)
-    cruiseSpeedMPH = math.floor(cruiseSpeed * 2.23694)
+    cruiseSpeedKM = math.floor(cruiseSpeed * speed)
+    cruiseSpeedMPH = math.floor(cruiseSpeed * speed)
 
     Wait(250)
     if cruise then
